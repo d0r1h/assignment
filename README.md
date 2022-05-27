@@ -1,7 +1,20 @@
 ### Product Data Analysis
 
 
-#
+# 
+
+### Speeding data loading using `Pandas`
+
+As the size of the data is on the disk and sample size is more than 13 million, It gonna take a time to load into memory and also consume a lot of memoery size. So to save memory size and speeding up the data loading run the following code.
+
+```python
+data = pd.read_csv("/content/test/2022_02_08-02_30_31_AM.csv", nrows=5)  #load only first 5 rows
+data.dtypes  # get the data types of columns
+dtypes = dict(zip(data.columns.values, ['object', 'object', 'object', 'object', 'object', 'object']))  # zip the data types and store into a vaiable
+json.dumps(dtypes) # dump into josn format
+del data  # delete the variable from the ram 
+data = pd.read_csv("/content/test/2022_02_08-02_30_31_AM.csv", dtype=dtypes) # load whole dataset with data type parameter
+```
 
 ### Insights from data 
 
