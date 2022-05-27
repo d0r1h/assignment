@@ -31,3 +31,17 @@ The following table summarizes wall time:
 4. There are total `278` product categories that have no price.
 5. For any product  category maximum count is `140k` and the minimum is `10k`.
 6. There are only 2 product categories whose price is more than 100$.
+
+
+### There are total 4 questions answered
+
+1. Products without prices
+2. Count of products without prices and with prices in each Product Type, Category, Level 1
+3. Correct Product Prices in the correct format (eg: $56) wherever possible and separate them into currency and value columns.
+4. List out the categories with average price of product.
+
+### Install the Dependencies 
+
+```
+!pip install -r /content/requirements.txt
+```
