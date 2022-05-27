@@ -15,6 +15,13 @@ json.dumps(dtypes) # dump into josn format
 del data  # delete the variable from the ram 
 data = pd.read_csv("/content/test/2022_02_08-02_30_31_AM.csv", dtype=dtypes) # load whole dataset with data type parameter
 ```
+Following table summarizes wall time:
+
+| Approach | Time 
+|------|------|
+| directly loading | 23.2 s | 
+| data loading with mentioned data type | 16.7 s | 
+
 
 ### Insights from data 
 
