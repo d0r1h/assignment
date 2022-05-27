@@ -22,6 +22,15 @@ The following table summarizes wall time:
 | directly loading | 23.2 s | 
 | data loading with mentioned data type | 16.7 s | 
 
+### Features from the data
+
+1. uuid                 
+2. price_string         
+3. price_string_unf   
+4. product_type         
+5. level_1              
+6. category 
+
 
 ### Insights from data 
 
@@ -33,15 +42,15 @@ The following table summarizes wall time:
 6. There are only 2 product categories whose price is more than 100$.
 
 
+### Install the Dependencies 
+
+```
+!pip install -r requirements.txt
+```
+
 ### There are total 4 questions answered
 
 1. Products without prices
 2. Count of products without prices and with prices in each Product Type, Category, Level 1
 3. Correct Product Prices in the correct format (eg: $56) wherever possible and separate them into currency and value columns.
 4. List out the categories with average price of product.
-
-### Install the Dependencies 
-
-```
-!pip install -r /content/requirements.txt
-```
